@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive data dashboard showing India's renewable energy statistics and charts">
+    <title>Data Dashboard | Switch-Green</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="brand">
+                    <img src="images/logo.png" alt="Switch-Green Logo" class="logo">
+                    <div class="brand-text">
+                        <h1>Switch-Green</h1>
+                        <p>India's Renewable Energy Portal</p>
+                    </div>
+                </div>
+                
+                <nav class="main-nav">
+                    <a href="Home.html" class="nav-link">Home</a>
+                    <a href="Data.html" class="nav-link active">Data</a>
+                    <a href="Reports.html" class="nav-link">Reports</a>
+                    <a href="Topics.html" class="nav-link">Topics</a>
+                    <a href="States.html" class="nav-link">States</a>
+                    <a href="Contact.html" class="nav-link">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+     <!-- PAGE HEADER -->
+    <section class="page-header" style="
+        background: linear-gradient(135deg, rgba(59, 130, 246, 0.25) 0%, rgba(147, 197, 253, 0.35) 100%), url('images/data-banner.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 4rem 2rem;
+        text-align: center;
+        border-bottom: 1px solid #e5e7eb;
+        position: relative;
+    ">
+        <!-- REDUCED OPACITY - More image visible -->
+        <div style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.70);
+            backdrop-filter: blur(2px);
+            z-index: 0;
+        "></div>
+        
+        <div class="container" style="position: relative; z-index: 1;">
+            <h1 class="page-title" style="
+                font-size: 3rem;
+                font-weight: 800;
+                color: #111827;
+                margin-bottom: 1rem;
+                text-shadow: 0 2px 4px rgba(255, 255, 255, 0.8);
+                animation: fadeInDown 0.8s ease;
+            ">🇮🇳 India's Renewable Energy Dashboard</h1>
+            
+            <p class="page-subtitle" style="
+                font-size: 1.2rem;
+                color: #1f2937;
+                margin-bottom: 2rem;
+                font-weight: 600;
+                text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8);
+                animation: fadeInUp 0.8s ease;
+            ">Official data from Ministry of New & Renewable Energy (MNRE)</p>
+            
+            <div class="header-badges" style="
+                display: flex;
+                gap: 1rem;
+                justify-content: center;
+                flex-wrap: wrap;
+                animation: fadeInUp 1s ease;
+            ">
+                <span class="badge verified" style="
+                    display: inline-block;
+                    padding: 0.5rem 1.25rem;
+                    background: rgba(16, 185, 129, 0.95);
+                    border: 1px solid rgba(16, 185, 129, 1);
+                    border-radius: 50px;
+                    color: white;
+                    font-size: 0.9rem;
+                    font-weight: 700;
+                    box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
+                ">✓ VERIFIED DATA</span>
+                
+                <span class="badge source" style="
+                    display: inline-block;
+                    padding: 0.5rem 1.25rem;
+                    background: rgba(59, 130, 246, 0.95);
+                    border: 1px solid rgba(59, 130, 246, 1);
+                    border-radius: 50px;
+                    color: white;
+                    font-size: 0.9rem;
+                    font-weight: 700;
+                    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+                ">Source: MNRE</span>
+                
+                <span class="badge date" style="
+                    display: inline-block;
+                    padding: 0.5rem 1.25rem;
+                    background: rgba(107, 114, 128, 0.95);
+                    border: 1px solid rgba(107, 114, 128, 1);
+                    border-radius: 50px;
+                    color: white;
+                    font-size: 0.9rem;
+                    font-weight: 700;
+                    box-shadow: 0 2px 8px rgba(107, 114, 128, 0.3);
+                ">Updated: October 31, 2025</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- MAIN STATS -->
+    <section class="dashboard-stats">
+        <div class="container">
+            <div class="stats-row">
+                <!-- Solar -->
+                <div class="stat-card solar">
+                    <div class="stat-icon">☀️</div>
+                    <div class="stat-info">
+                        <h3>Solar Power</h3>
+                        <div class="stat-number">129.92 <span>GW</span></div>
+                        <div class="stat-percent">64.9% of total</div>
+                    </div>
+                </div>
+
+                <!-- Wind -->
+                <div class="stat-card wind">
+                    <div class="stat-icon">💨</div>
+                    <div class="stat-info">
+                        <h3>Wind Power</h3>
+                        <div class="stat-number">53.60 <span>GW</span></div>
+                        <div class="stat-percent">26.8% of total</div>
+                    </div>
+                </div>
+
+                <!-- Hydro -->
+                <div class="stat-card hydro">
+                    <div class="stat-icon">💧</div>
+                    <div class="stat-info">
+                        <h3>Small Hydro</h3>
+                        <div class="stat-number">5.16 <span>GW</span></div>
+                        <div class="stat-percent">2.6% of total</div>
+                    </div>
+                </div>
+
+                <!-- Biomass -->
+                <div class="stat-card biomass">
+                    <div class="stat-icon">🌾</div>
+                    <div class="stat-info">
+                        <h3>Biomass Power</h3>
+                        <div class="stat-number">11.61 <span>GW</span></div>
+                        <div class="stat-percent">5.8% of total</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Total Progress Card -->
+            <div class="total-card">
+                <div class="total-header">
+                    <div class="total-icon">🇮🇳</div>
+                    <h3>Total Renewable Capacity</h3>
+                </div>
+                <div class="total-value">200.30 <span>GIGAWATTS (GW)</span></div>
+                
+                <div class="progress-section">
+                    <div class="progress-info">
+                        <span>Progress to 500 GW by 2030</span>
+                        <span class="progress-percent">40.06%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEY INSIGHTS -->
+    <section class="insights-section">
+        <div class="container">
+            <h2 class="section-title">📈 Key Insights</h2>
+            
+            <div class="insights-grid">
+                <div class="insight-card">
+                    <div class="insight-icon">📊</div>
+                    <h4>Growth Rate</h4>
+                    <p class="insight-value">~15.2% <span>year-over-year</span></p>
+                </div>
+                
+                <div class="insight-card">
+                    <div class="insight-icon">🏆</div>
+                    <h4>Leading State</h4>
+                    <p class="insight-value">Rajasthan <span>40.78 GW</span></p>
+                </div>
+                
+                <div class="insight-card">
+                    <div class="insight-icon">🌍</div>
+                    <h4>Global Rank</h4>
+                    <p class="insight-value">4th Largest <span>in RE capacity</span></p>
+                </div>
+                
+                <div class="insight-card">
+                    <div class="insight-icon">🎯</div>
+                    <h4>2030 Progress</h4>
+                    <p class="insight-value">40.06% <span>of 500 GW goal</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOP 10 STATES TABLE -->
+    <section class="table-section">
+        <div class="container">
+            <h2 class="section-title">🏆 Top 10 States by Renewable Capacity</h2>
+            <p class="section-subtitle">State-wise breakdown as of October 31, 2025</p>
+            
+            <div class="table-wrapper">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>State / UT</th>
+                            <th>Solar (MW)</th>
+                            <th>Wind (MW)</th>
+                            <th>Hydro (MW)</th>
+                            <th>Biomass (MW)</th>
+                            <th>Total (GW)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="rank-cell"><strong>1</strong></td>
+                            <td class="state-cell"><strong>Rajasthan</strong></td>
+                            <td>35,337.88</td>
+                            <td>5,208.75</td>
+                            <td>23.85</td>
+                            <td>207.52</td>
+                            <td class="total-cell"><strong>40.78</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="rank-cell"><strong>2</strong></td>
+                            <td class="state-cell"><strong>Gujarat</strong></td>
+                            <td>24,143.16</td>
+                            <td>14,493.38</td>
+                            <td>113.30</td>
+                            <td>129.85</td>
+                            <td class="total-cell"><strong>38.88</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="rank-cell"><strong>3</strong></td>
+                            <td class="state-cell"><strong>Maharashtra</strong></td>
+                            <td>16,137.25</td>
+                            <td>5,716.31</td>
+                            <td>384.28</td>
+                            <td>2,998.30</td>
+                            <td class="total-cell"><strong>25.24</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="rank-cell"><strong>4</strong></td>
+                            <td class="state-cell"><strong>Tamil Nadu</strong></td>
+                            <td>11,471.94</td>
+                            <td>11,938.34</td>
+                            <td>123.05</td>
+                            <td>1,046.62</td>
+                            <td class="total-cell"><strong>24.58</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="rank-cell"><strong>5</strong></td>
+                            <td class="state-cell"><strong>Karnataka</strong></td>
+                            <td>10,592.12</td>
+                            <td>8,193.29</td>
+                            <td>1,284.73</td>
+                            <td>1,916.05</td>
+                            <td class="total-cell"><strong>21.99</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="rank-cell"><strong>6</strong></td>
+                            <td class="state-cell"><strong>Andhra Pradesh</strong></td>
+                            <td>5,925.61</td>
+                            <td>4,397.78</td>
+                            <td>163.31</td>
+                            <td>594.02</td>
+                            <td class="total-cell"><strong>11.08</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="rank-cell"><strong>7</strong></td>
+                            <td class="state-cell"><strong>Madhya Pradesh</strong></td>
+                            <td>5,723.77</td>
+                            <td>3,448.15</td>
+                            <td>123.71</td>
+                            <td>155.46</td>
+                            <td class="total-cell"><strong>9.45</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="rank-cell"><strong>8</strong></td>
+                            <td class="state-cell"><strong>Telangana</strong></td>
+                            <td>5,033.50</td>
+                            <td>128.10</td>
+                            <td>90.87</td>
+                            <td>221.67</td>
+                            <td class="total-cell"><strong>5.47</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="rank-cell"><strong>9</strong></td>
+                            <td class="state-cell"><strong>Uttar Pradesh</strong></td>
+                            <td>3,798.04</td>
+                            <td>1,985.50</td>
+                            <td>50.60</td>
+                            <td>324.89</td>
+                            <td class="total-cell"><strong>6.16</strong></td>
+                        </tr>
+                        <tr>
+                            <td class="rank-cell"><strong>10</strong></td>
+                            <td class="state-cell"><strong>Punjab</strong></td>
+                            <td>4,679.10</td>
+                            <td>4.50</td>
+                            <td>299.86</td>
+                            <td>396.50</td>
+                            <td class="total-cell"><strong>5.38</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="table-note">
+                <p><strong>Note:</strong> Data represents installed capacity in Megawatts (MW) and Gigawatts (GW). View all 37 states on <a href="States.html">States page</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHARTS SECTION -->
+    <section class="charts-section">
+        <div class="container">
+            <h2 class="section-title">📊 Visual Analytics</h2>
+            
+            <div class="charts-grid">
+                <!-- Doughnut Chart -->
+                <div class="chart-card">
+                    <h3 class="chart-title">🥧 Renewable Energy Mix</h3>
+                    <p class="chart-subtitle">Breakdown by source type</p>
+                    <div class="chart-container">
+                        <canvas id="mixChart"></canvas>
+                    </div>
+                </div>
+                
+                <!-- Bar Chart -->
+                <div class="chart-card chart-wide">
+                    <h3 class="chart-title">📊 Top 10 States Comparison</h3>
+                    <p class="chart-subtitle">Stacked capacity by energy source</p>
+                    <div class="chart-container">
+                        <canvas id="statesChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/logo.png" alt="Switch-Green" class="footer-logo">
+                    <h3>Switch-Green</h3>
+                    <p>India's Renewable Energy Portal</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Explore</h4>
+                        <a href="Data.html">Data Dashboard</a>
+                        <a href="States.html">State Comparison</a>
+                        <a href="Reports.html">Reports</a>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Learn</h4>
+                        <a href="Topics.html">Green Energy Topics</a>
+                        <a href="Topics.html#contribute">How to Contribute</a>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>About</h4>
+                        <a href="Contact.html">About Us</a>
+                        <a href="Contact.html#team">Team</a>
+                        <a href="Contact.html">Contact</a>
+                    </div>
+                </div>
+                
+                <div class="footer-info">
+                    <p><strong>Data Source:</strong> Ministry of New & Renewable Energy (MNRE)</p>
+                    <p><strong>Last Updated:</strong> October 31, 2025</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Switch-Green | Computer Engineering Microproject</p>
+                <p>Shah & Anchor Kutchhi Engineering College, Mumbai</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js"></script>
+    <script src="js/mnreData2025.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Progress bar animation
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.getElementById('progressFill').style.width = '40.06%';
+            }, 300);
+        });
+        
+        // Initialize charts
+        document.addEventListener('DOMContentLoaded', function() {
+            const data = getOfficialMNREData();
+            
+            // Doughnut Chart
+            new Chart(document.getElementById('mixChart'), {
+                type: 'doughnut',
+                data: {
+                    labels: ['Solar', 'Wind', 'Small Hydro', 'Biomass'],
+                    datasets: [{
+                        data: [129.92, 53.60, 5.16, 11.61],
+                        backgroundColor: ['#f59e0b', '#3b82f6', '#06b6d4', '#84cc16'],
+                        borderWidth: 3,
+                        borderColor: '#fff'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: { position: 'bottom' },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const value = context.parsed;
+                                    const total = context.dataset.data.reduce((a,b) => a+b);
+                                    const percentage = ((value / total) * 100).toFixed(1);
+                                    return `${context.label}: ${value} GW (${percentage}%)`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+            
+            // Horizontal Bar Chart
+            new Chart(document.getElementById('statesChart'), {
+                type: 'bar',
+                data: {
+                    labels: data.topStates.map(s => s.name),
+                    datasets: [
+                        {
+                            label: 'Solar',
+                            data: data.topStates.map(s => s.solar / 1000),
+                            backgroundColor: '#f59e0b'
+                        },
+                        {
+                            label: 'Wind',
+                            data: data.topStates.map(s => s.wind / 1000),
+                            backgroundColor: '#3b82f6'
+                        },
+                        {
+                            label: 'Hydro',
+                            data: data.topStates.map(s => s.hydro / 1000),
+                            backgroundColor: '#06b6d4'
+                        },
+                        {
+                            label: 'Biomass',
+                            data: data.topStates.map(s => s.biomass / 1000),
+                            backgroundColor: '#84cc16'
+                        }
+                    ]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    scales: {
+                        x: {
+                            stacked: true,
+                            title: { display: true, text: 'Capacity (GW)' }
+                        },
+                        y: { stacked: true }
+                    },
+                    plugins: {
+                        legend: { position: 'bottom' }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

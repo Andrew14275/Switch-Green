@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Switch-Green: India's renewable energy data portal tracking 500 GW target by 2030">
+    <title>Home | Switch-Green</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="brand">
+                    <img src="images/logo.png" alt="Switch-Green Logo" class="logo">
+                    <div class="brand-text">
+                        <h1>Switch-Green</h1>
+                        <p>India's Renewable Energy Portal</p>
+                    </div>
+                </div>
+                
+                <nav class="main-nav">
+                    <a href="Home.html" class="nav-link active">Home</a>
+                    <a href="Data.html" class="nav-link">Data</a>
+                    <a href="Reports.html" class="nav-link">Reports</a>
+                    <a href="Topics.html" class="nav-link">Topics</a>
+                    <a href="States.html" class="nav-link">States</a>
+                    <a href="Contact.html" class="nav-link">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+        <!-- HERO -->
+    <section class="hero" style="
+        position: relative;
+        min-height: 85vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 6rem 2rem;
+        background: linear-gradient(135deg, rgba(139, 210, 191, 0.3) 0%, rgba(139, 210, 191, 0.5) 100%), url('images/hero-banner.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    ">
+        <!-- Overlay for better text readability -->
+        <div style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.85);
+            z-index: 0;
+        "></div>
+        
+        <div class="container" style="position: relative; z-index: 1; text-align: center;">
+            <span class="badge" style="
+                display: inline-block;
+                padding: 0.5rem 1.25rem;
+                background: rgba(16, 185, 129, 0.15);
+                border: 1px solid rgba(16, 185, 129, 0.3);
+                border-radius: 50px;
+                color: #047857;
+                font-size: 0.9rem;
+                font-weight: 600;
+                margin-bottom: 2rem;
+                animation: fadeInDown 0.8s ease;
+            ">🇮🇳 Official MNRE Data • Updated October 2025</span>
+            
+            <h1 class="hero-title" style="
+                font-size: 3.5rem;
+                font-weight: 800;
+                line-height: 1.2;
+                margin-bottom: 1.5rem;
+                letter-spacing: -0.03em;
+                animation: fadeInUp 0.8s ease;
+            ">India's Journey to<br><span style="
+                background: linear-gradient(135deg, #10b981, #059669);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            ">500 GW Renewable Energy by 2030</span></h1>
+            
+            <p class="hero-subtitle" style="
+                font-size: 1.25rem;
+                color: #4b5563;
+                margin-bottom: 3rem;
+                max-width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+                animation: fadeInUp 1s ease;
+            ">Comprehensive tracking of India's clean energy transition with official government data, state-wise analysis, and actionable insights for citizens.</p>
+            
+            <div class="hero-stats" style="
+                display: flex;
+                gap: 3rem;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-bottom: 3rem;
+                animation: fadeInUp 1.2s ease;
+            ">
+                <div class="stat-box" style="text-align: center;">
+                    <div class="stat-value" style="
+                        font-size: 2.5rem;
+                        font-weight: 800;
+                        color: #10b981;
+                        line-height: 1;
+                    ">200.30 GW</div>
+                    <div class="stat-label" style="
+                        font-size: 0.95rem;
+                        color: #6b7280;
+                        font-weight: 500;
+                        margin-top: 0.5rem;
+                    ">Current Capacity</div>
+                </div>
+                
+                <div class="stat-box" style="text-align: center;">
+                    <div class="stat-value" style="
+                        font-size: 2.5rem;
+                        font-weight: 800;
+                        color: #10b981;
+                        line-height: 1;
+                    ">40.06%</div>
+                    <div class="stat-label" style="
+                        font-size: 0.95rem;
+                        color: #6b7280;
+                        font-weight: 500;
+                        margin-top: 0.5rem;
+                    ">Progress to Goal</div>
+                </div>
+                
+                <div class="stat-box" style="text-align: center;">
+                    <div class="stat-value" style="
+                        font-size: 2.5rem;
+                        font-weight: 800;
+                        color: #10b981;
+                        line-height: 1;
+                    ">37 States</div>
+                    <div class="stat-label" style="
+                        font-size: 0.95rem;
+                        color: #6b7280;
+                        font-weight: 500;
+                        margin-top: 0.5rem;
+                    ">Contributing</div>
+                </div>
+                
+                <div class="stat-box" style="text-align: center;">
+                    <div class="stat-value" style="
+                        font-size: 2.5rem;
+                        font-weight: 800;
+                        color: #10b981;
+                        line-height: 1;
+                    ">4th Largest</div>
+                    <div class="stat-label" style="
+                        font-size: 0.95rem;
+                        color: #6b7280;
+                        font-weight: 500;
+                        margin-top: 0.5rem;
+                    ">Globally</div>
+                </div>
+            </div>
+            
+            <div class="hero-actions" style="
+                display: flex;
+                gap: 1rem;
+                justify-content: center;
+                flex-wrap: wrap;
+                animation: fadeInUp 1.4s ease;
+            ">
+                <a href="Data.html" class="btn btn-primary" style="
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 0.75rem;
+                    padding: 1rem 2rem;
+                    border-radius: 12px;
+                    font-weight: 600;
+                    font-size: 1rem;
+                    background: linear-gradient(135deg, #10b981, #059669);
+                    color: white;
+                    text-decoration: none;
+                    box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3);
+                    transition: all 0.25s ease;
+                ">View Dashboard</a>
+                
+                <a href="Topics.html" class="btn btn-secondary" style="
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 0.75rem;
+                    padding: 1rem 2rem;
+                    border-radius: 12px;
+                    font-weight: 600;
+                    font-size: 1rem;
+                    background: white;
+                    color: #10b981;
+                    border: 2px solid #10b981;
+                    text-decoration: none;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    transition: all 0.25s ease;
+                ">Learn About Green Energy</a>
+            </div>
+        </div>
+        
+        <!-- Animated decoration elements -->
+        <div style="
+            position: absolute;
+            bottom: -50px;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: linear-gradient(to bottom, transparent, #fefdfb);
+            z-index: 1;
+        "></div>
+    </section>
+
+
+    <!-- SECTORS -->
+    <section class="sectors">
+        <div class="container">
+            <h2 class="section-title">Renewable Energy Sectors</h2>
+            
+            <div class="sector-grid">
+                <div class="sector-card solar">
+                    <div class="sector-icon">☀️</div>
+                    <h3>Solar Power</h3>
+                    <div class="sector-capacity">129.92 GW</div>
+                    <div class="sector-percent">64.9% of total</div>
+                    <p>India's largest renewable source with massive solar parks in Rajasthan and Gujarat</p>
+                </div>
+                
+                <div class="sector-card wind">
+                    <div class="sector-icon">💨</div>
+                    <h3>Wind Power</h3>
+                    <div class="sector-capacity">53.60 GW</div>
+                    <div class="sector-percent">26.8% of total</div>
+                    <p>Strong coastal and offshore potential in Tamil Nadu and Gujarat</p>
+                </div>
+                
+                <div class="sector-card hydro">
+                    <div class="sector-icon">💧</div>
+                    <h3>Small Hydro</h3>
+                    <div class="sector-capacity">5.16 GW</div>
+                    <div class="sector-percent">2.6% of total</div>
+                    <p>Run-of-river projects in Himalayan and Western Ghat regions</p>
+                </div>
+                
+                <div class="sector-card biomass">
+                    <div class="sector-icon">🌾</div>
+                    <h3>Biomass Power</h3>
+                    <div class="sector-capacity">11.61 GW</div>
+                    <div class="sector-percent">5.8% of total</div>
+                    <p>Agricultural waste conversion supporting rural economies</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LATEST FINDINGS -->
+    <section class="findings">
+        <div class="container">
+            <h2 class="section-title">Latest Findings</h2>
+            
+            <div class="findings-grid">
+                <div class="finding-card">
+                    <span class="finding-date">October 2025</span>
+                    <h3>India accelerates toward 500 GW renewable capacity</h3>
+                    <p>India's renewable energy capacity reached 200.30 GW, marking 40% progress toward the 2030 target. Solar PV continues to dominate with 129.92 GW, driven by competitive tariffs and government schemes like PM-KUSUM.</p>
+                    <a href="Data.html" class="read-more">View Dashboard →</a>
+                </div>
+                
+                <div class="finding-card">
+                    <span class="finding-date">State Analysis</span>
+                    <h3>Top 5 states contribute 75% of total capacity</h3>
+                    <p>Rajasthan leads with 40.78 GW, followed by Gujarat (38.88 GW), Maharashtra (25.24 GW), Tamil Nadu (24.58 GW), and Karnataka (21.99 GW). These states account for three-quarters of India's renewable power.</p>
+                    <a href="States.html" class="read-more">Compare States →</a>
+                </div>
+                
+                <div class="finding-card">
+                    <span class="finding-date">Take Action</span>
+                    <h3>How you can contribute to India's green transition</h3>
+                    <p>From rooftop solar installations to energy conservation, discover practical ways Indian citizens can support renewable energy adoption and reduce their carbon footprint.</p>
+                    <a href="Topics.html" class="read-more">Learn How →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="finding-card">
+    <span class="finding-date">Why Green Energy?</span>
+    <h3>8 Reasons to Switch to Renewable Energy Now</h3>
+    <p>From environmental benefits to economic savings, discover why green energy is the smarter choice for India's future. Learn how renewables create jobs, improve health, and secure energy independence.</p>
+    <a href="Topics.html" class="read-more">Learn More →</a>
+</div>
+
+
+    <!-- QUICK LINKS -->
+    <section class="quick-links">
+        <div class="container">
+            <h2 class="section-title">Explore Switch-Green</h2>
+            
+            <div class="links-grid">
+                <a href="Data.html" class="link-card">
+                    <div class="link-icon">📊</div>
+                    <h3>Interactive Dashboard</h3>
+                    <p>View charts, tables, and visual analytics of India's renewable energy data</p>
+                </a>
+                
+                <a href="States.html" class="link-card">
+                    <div class="link-icon">🗺️</div>
+                    <h3>State Comparison</h3>
+                    <p>Compare renewable capacity across all 37 Indian states and AQI impact</p>
+                </a>
+                
+                <a href="Topics.html" class="link-card">
+                    <div class="link-icon">📚</div>
+                    <h3>Learn & Contribute</h3>
+                    <p>Understand green energy and discover how you can make a difference</p>
+                </a>
+                
+                <a href="Reports.html" class="link-card">
+                    <div class="link-icon">📄</div>
+                    <h3>Download Reports</h3>
+                    <p>Access monthly and annual reports, plus export data in CSV/JSON</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Join India's Clean Energy Revolution</h2>
+            <p>Track progress, learn about renewable energy, and discover how you can contribute</p>
+            <div class="cta-buttons">
+                <a href="Data.html" class="btn btn-primary">Explore Data</a>
+                <a href="Topics.html" class="btn btn-secondary">Get Involved</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/logo.png" alt="Switch-Green" class="footer-logo">
+                    <h3>Switch-Green</h3>
+                    <p>India's Renewable Energy Portal</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Explore</h4>
+                        <a href="Data.html">Data Dashboard</a>
+                        <a href="States.html">State Comparison</a>
+                        <a href="Reports.html">Reports</a>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Learn</h4>
+                        <a href="Topics.html">Green Energy Topics</a>
+                        <a href="Topics.html#contribute">How to Contribute</a>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>About</h4>
+                        <a href="Contact.html">About Us</a>
+                        <a href="Contact.html#team">Team</a>
+                        <a href="Contact.html">Contact</a>
+                    </div>
+                </div>
+                
+                <div class="footer-info">
+                    <p><strong>Data Source:</strong> Ministry of New & Renewable Energy (MNRE)</p>
+                    <p><strong>Last Updated:</strong> October 31, 2025</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Switch-Green | Computer Engineering Microproject</p>
+                <p>Shah & Anchor Kutchhi Engineering College, Mumbai</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

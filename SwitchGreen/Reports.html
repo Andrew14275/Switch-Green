@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Download renewable energy reports and export data in multiple formats">
+    <title>Reports & Downloads | Switch-Green</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="brand">
+                    <img src="images/logo.png" alt="Switch-Green Logo" class="logo">
+                    <div class="brand-text">
+                        <h1>Switch-Green</h1>
+                        <p>India's Renewable Energy Portal</p>
+                    </div>
+                </div>
+                
+                <nav class="main-nav">
+                    <a href="Home.html" class="nav-link">Home</a>
+                    <a href="Data.html" class="nav-link">Data</a>
+                    <a href="Reports.html" class="nav-link active">Reports</a>
+                    <a href="Topics.html" class="nav-link">Topics</a>
+                    <a href="States.html" class="nav-link">States</a>
+                    <a href="Contact.html" class="nav-link">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+        <!-- PAGE HEADER -->
+    <section class="page-header" style="
+        background: linear-gradient(135deg, rgba(245, 158, 11, 0.2) 0%, rgba(251, 191, 36, 0.25) 100%), url('images/reports-banner.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 4.5rem 2rem;
+        text-align: center;
+        border-bottom: 1px solid #e5e7eb;
+        position: relative;
+    ">
+        <!-- REDUCED OPACITY - More image visible -->
+        <div style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.72);
+            backdrop-filter: blur(2px);
+            z-index: 0;
+        "></div>
+        
+        <div class="container" style="position: relative; z-index: 1;">
+            <div style="
+                display: inline-block;
+                padding: 0.5rem 1.25rem;
+                background: rgba(245, 158, 11, 0.95);
+                border: 2px solid rgba(245, 158, 11, 1);
+                border-radius: 50px;
+                color: white;
+                font-size: 0.9rem;
+                font-weight: 700;
+                margin-bottom: 1.5rem;
+                box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+                animation: fadeInDown 0.6s ease;
+            ">📊 DOWNLOAD CENTER</div>
+            
+            <h1 class="page-title" style="
+                font-size: 3rem;
+                font-weight: 800;
+                color: #111827;
+                margin-bottom: 1rem;
+                text-shadow: 0 2px 4px rgba(255, 255, 255, 0.9);
+                animation: fadeInUp 0.8s ease;
+            ">📄 Reports & Downloads</h1>
+            
+            <p class="page-subtitle" style="
+                font-size: 1.2rem;
+                color: #1f2937;
+                font-weight: 600;
+                margin-bottom: 2rem;
+                text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8);
+                animation: fadeInUp 1s ease;
+            ">Access official MNRE reports and export renewable energy data</p>
+            
+            <!-- Quick Stats -->
+            <div style="
+                display: inline-flex;
+                gap: 2rem;
+                background: rgba(255, 255, 255, 0.95);
+                padding: 1.5rem 2.5rem;
+                border-radius: 16px;
+                border: 2px solid rgba(245, 158, 11, 0.3);
+                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+                margin-top: 1rem;
+                animation: fadeInUp 1.2s ease;
+            ">
+                <div style="text-align: center;">
+                    <div style="font-size: 2rem; font-weight: 800; color: #f59e0b;">📅</div>
+                    <div style="font-size: 0.9rem; color: #6b7280; font-weight: 600; margin-top: 0.5rem;">Monthly Reports</div>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 2rem; font-weight: 800; color: #f59e0b;">📑</div>
+                    <div style="font-size: 0.9rem; color: #6b7280; font-weight: 600; margin-top: 0.5rem;">Annual Analysis</div>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 2rem; font-weight: 800; color: #f59e0b;">💾</div>
+                    <div style="font-size: 0.9rem; color: #6b7280; font-weight: 600; margin-top: 0.5rem;">Export Data</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- MONTHLY REPORTS -->
+    <section class="reports-section">
+        <div class="container">
+            <h2 class="section-title">Monthly Reports</h2>
+            <p class="section-intro">Latest monthly renewable energy capacity reports from MNRE</p>
+            
+            <div class="reports-grid">
+                <!-- October 2025 -->
+                <div class="report-card latest">
+                    <div class="report-badge">LATEST</div>
+                    <div class="report-icon">📊</div>
+                    <h3>October 2025 Report</h3>
+                    <p class="report-date">Published: November 10, 2025</p>
+                    <p class="report-desc">Comprehensive state-wise renewable energy capacity data. Total: 200.30 GW across 37 states.</p>
+                    <div class="report-stats">
+                        <span>📈 +2.3 GW from Sept</span>
+                        <span>🏆 Rajasthan leads</span>
+                    </div>
+                    <button class="btn btn-primary" onclick="alert('Report download functionality - October 2025')">
+                        Download PDF
+                    </button>
+                </div>
+
+                <!-- September 2025 -->
+                <div class="report-card">
+                    <div class="report-icon">📊</div>
+                    <h3>September 2025 Report</h3>
+                    <p class="report-date">Published: October 10, 2025</p>
+                    <p class="report-desc">Monthly capacity update showing 198.07 GW total renewable energy across India.</p>
+                    <div class="report-stats">
+                        <span>📈 +2.1 GW from Aug</span>
+                        <span>☀️ Solar growth</span>
+                    </div>
+                    <button class="btn btn-secondary" onclick="alert('Report download functionality - September 2025')">
+                        Download PDF
+                    </button>
+                </div>
+
+                <!-- August 2025 -->
+                <div class="report-card">
+                    <div class="report-icon">📊</div>
+                    <h3>August 2025 Report</h3>
+                    <p class="report-date">Published: September 10, 2025</p>
+                    <p class="report-desc">State-wise renewable capacity update showing 195.97 GW total installed capacity.</p>
+                    <div class="report-stats">
+                        <span>📈 +1.9 GW from July</span>
+                        <span>💨 Wind expansion</span>
+                    </div>
+                    <button class="btn btn-secondary" onclick="alert('Report download functionality - August 2025')">
+                        Download PDF
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ANNUAL REPORTS -->
+    <section class="reports-section annual">
+        <div class="container">
+            <h2 class="section-title">Annual Reports</h2>
+            <p class="section-intro">Comprehensive yearly analysis of India's renewable energy sector</p>
+            
+            <div class="reports-grid">
+                <!-- 2024-25 -->
+                <div class="report-card featured">
+                    <div class="report-badge">FEATURED</div>
+                    <div class="report-icon">📑</div>
+                    <h3>Annual Report 2024-25</h3>
+                    <p class="report-date">Published: April 2025</p>
+                    <p class="report-desc">Complete analysis of India's renewable energy growth, policy changes, and future projections for fiscal year 2024-25.</p>
+                    <ul class="report-highlights">
+                        <li>✓ 45 GW capacity addition</li>
+                        <li>✓ State-wise performance analysis</li>
+                        <li>✓ Investment trends & forecasts</li>
+                        <li>✓ Policy impact assessment</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="alert('Annual Report 2024-25 download')">
+                        Download Full Report
+                    </button>
+                </div>
+
+                <!-- 2023-24 -->
+                <div class="report-card">
+                    <div class="report-icon">📑</div>
+                    <h3>Annual Report 2023-24</h3>
+                    <p class="report-date">Published: April 2024</p>
+                    <p class="report-desc">Fiscal year 2023-24 analysis covering India's renewable energy achievements and challenges.</p>
+                    <ul class="report-highlights">
+                        <li>✓ 38 GW capacity addition</li>
+                        <li>✓ Solar dominance established</li>
+                        <li>✓ Grid integration challenges</li>
+                        <li>✓ Job creation analysis</li>
+                    </ul>
+                    <button class="btn btn-secondary" onclick="alert('Annual Report 2023-24 download')">
+                        Download Report
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DATA EXPORT -->
+    <section class="export-section">
+        <div class="container">
+            <h2 class="section-title">📥 Export Data</h2>
+            <p class="section-intro">Download renewable energy data in your preferred format</p>
+            
+            <div class="export-card">
+                <div class="export-info">
+                    <h3>State-wise Renewable Energy Data</h3>
+                    <p>Export complete dataset including solar, wind, hydro, and biomass capacity for all 37 Indian states (as of October 31, 2025)</p>
+                    
+                    <div class="export-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">📊</span>
+                            <span>37 states coverage</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">⚡</span>
+                            <span>4 energy types</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">📈</span>
+                            <span>200+ data points</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>MNRE verified</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="export-buttons">
+                    <button class="export-btn json" onclick="exportData('json')">
+                        <span class="btn-icon">{ }</span>
+                        <span class="btn-text">
+                            <strong>Export as JSON</strong>
+                            <small>Structured data format</small>
+                        </span>
+                    </button>
+                    
+                    <button class="export-btn csv" onclick="exportData('csv')">
+                        <span class="btn-icon">📄</span>
+                        <span class="btn-text">
+                            <strong>Export as CSV</strong>
+                            <small>Excel compatible</small>
+                        </span>
+                    </button>
+                    
+                    <button class="export-btn excel" onclick="exportData('excel')">
+                        <span class="btn-icon">📊</span>
+                        <span class="btn-text">
+                            <strong>Export as Excel</strong>
+                            <small>XLSX format</small>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="export-note">
+                <p><strong>Data Attribution:</strong> Data sourced from Ministry of New & Renewable Energy (MNRE), Government of India. Last updated: October 31, 2025. Please cite Switch-Green when using this data in research or publications.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ADDITIONAL RESOURCES -->
+    <section class="resources-section">
+        <div class="container">
+            <h2 class="section-title">📚 Additional Resources</h2>
+            
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">🏛️</div>
+                    <h3>MNRE Official Website</h3>
+                    <p>Ministry of New & Renewable Energy official portal for latest policies and updates</p>
+                    <a href="https://mnre.gov.in" target="_blank" class="resource-link">Visit MNRE →</a>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="resource-icon">📊</div>
+                    <h3>Open Government Data</h3>
+                    <p>Access government datasets on renewable energy from data.gov.in platform</p>
+                    <a href="https://data.gov.in" target="_blank" class="resource-link">Browse Data →</a>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="resource-icon">⚡</div>
+                    <h3>National Power Portal</h3>
+                    <p>Real-time power generation data and grid statistics from CEA</p>
+                    <a href="https://npp.gov.in" target="_blank" class="resource-link">View Portal →</a>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="resource-icon">🌍</div>
+                    <h3>International Energy Agency</h3>
+                    <p>Global renewable energy trends and analysis from IEA</p>
+                    <a href="https://www.iea.org" target="_blank" class="resource-link">Explore IEA →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/logo.png" alt="Switch-Green" class="footer-logo">
+                    <h3>Switch-Green</h3>
+                    <p>India's Renewable Energy Portal</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Explore</h4>
+                        <a href="Data.html">Data Dashboard</a>
+                        <a href="States.html">State Comparison</a>
+                        <a href="Reports.html">Reports</a>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Learn</h4>
+                        <a href="Topics.html">Green Energy Topics</a>
+                        <a href="Topics.html#contribute">How to Contribute</a>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>About</h4>
+                        <a href="Contact.html">About Us</a>
+                        <a href="Contact.html#team">Team</a>
+                        <a href="Contact.html">Contact</a>
+                    </div>
+                </div>
+                
+                <div class="footer-info">
+                    <p><strong>Data Source:</strong> Ministry of New & Renewable Energy (MNRE)</p>
+                    <p><strong>Last Updated:</strong> October 31, 2025</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Switch-Green | Computer Engineering Microproject</p>
+                <p>Shah & Anchor Kutchhi Engineering College, Mumbai</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="js/mnreData2025.js"></script>
+    <script>
+        // Export data function
+        function exportData(format) {
+            const data = getOfficialMNREData();
+            
+            if (format === 'json') {
+                const jsonData = JSON.stringify(data, null, 2);
+                const blob = new Blob([jsonData], { type: 'application/json' });
+                const url = URL.createObjectURL(blob);
+                const link = document.createElement('a');
+                link.href = url;
+                link.download = `india-renewable-energy-${new Date().toISOString().split('T')[0]}.json`;
+                link.click();
+                URL.revokeObjectURL(url);
+            }
+            
+            else if (format === 'csv') {
+                let csv = 'State,Solar (MW),Wind (MW),Hydro (MW),Biomass (MW),Total (MW)\n';
+                data.topStates.forEach(state => {
+                    csv += `${state.name},${state.solar},${state.wind},${state.hydro},${state.biomass},${state.total}\n`;
+                });
+                const blob = new Blob([csv], { type: 'text/csv' });
+                const url = URL.createObjectURL(blob);
+                const link = document.createElement('a');
+                link.href = url;
+                link.download = `india-renewable-energy-${new Date().toISOString().split('T')[0]}.csv`;
+                link.click();
+                URL.revokeObjectURL(url);
+            }
+            
+            else if (format === 'excel') {
+                alert('Excel export functionality: Convert CSV to XLSX format using library like SheetJS');
+            }
+        }
+    </script>
+</body>
+</html>
